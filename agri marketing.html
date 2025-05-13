@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agricultural Marketing</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <header>
+    <h1>AgroMart</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to AgroMart</h2>
+    <p>Your trusted marketplace for fresh agricultural products.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Wheat" />
+        <h3>Wheat</h3>
+        <p>Price: ₹25/kg</p>
+        <button onclick="buyProduct('Wheat')">Buy</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Rice" />
+        <h3>Rice</h3>
+        <p>Price: ₹30/kg</p>
+        <button onclick="buyProduct('Rice')">Buy</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Fruits" />
+        <h3>Fresh Fruits</h3>
+        <p>Price: ₹50/kg</p>
+        <button onclick="buyProduct('Fruits')">Buy</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 AgroMart. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
